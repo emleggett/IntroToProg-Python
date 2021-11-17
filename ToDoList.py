@@ -13,7 +13,7 @@
 # -- Data -- #
 # declare variables and constants
 strFile = "ToDoList.txt" # An object that represents a file
-objFile = None
+objFile = open(strFile, "a") # Opens/creates companion .txt file
 lstData = ""  # A row of text data from the file
 dicRow = {}    # A row of data separated into elements of a dictionary {Task,Priority}
 lstTable = []  # A list that acts as a 'table' of rows
